@@ -4,7 +4,7 @@
 
 This project aims to predict customer churn using various machine learning models. It includes data preprocessing, exploratory data analysis, feature engineering, model training, evaluation, and iteration for improvement.
 
-## Data
+## Data 
 
 The dataset includes customer information such as:
 
@@ -22,13 +22,8 @@ The dataset includes customer information such as:
 
 A heatmap was created to visualize the correlation between features. High correlations (red) indicate strong relationships between features. For instance, `total monthly charges` and `total day minutes` showed a strong positive correlation.
 
-![Correlation Heatmap](path/to/heatmap.png)
+![alt text](image.png)
 
-### Pairplot
-
-A pairplot showed the distribution of `total day minutes`, `total evening minutes`, and `total night minutes` with churn status as the hue. The analysis revealed different usage patterns for churned and non-churned customers.
-
-![Pairplot](path/to/pairplot.png)
 
 ### Boxplots
 
@@ -36,17 +31,17 @@ Boxplots indicated that higher customer service call counts and total monthly ch
 
 - **Customer Service Calls vs Churn:**
 
-  ![Customer Service Calls vs Churn](path/to/boxplot_customerservicecalls.png)
+![alt text](image-1.png)
 
 - **Total Monthly Charges vs Churn:**
 
-  ![Total Monthly Charges vs Churn](path/to/boxplot_monthlycharges.png)
+![alt text](image-2.png)
 
 ### Pie Chart
 
 A pie chart displayed the distribution of customers by international plan, with over 90% not having the plan. This suggests a potential focus area for the company.
 
-![International Plan Distribution](path/to/piechart.png)
+![alt text](image-3.png)
 
 ## Feature Engineering
 
@@ -57,6 +52,40 @@ Key features created:
 - **total_charge_per_day_min**: Average charge per day minute.
 - **customer_service_calls_per_year**: Annualized customer service calls.
 - **total_monthly_charges**: Sum of all monthly charges.
+
+## Feature Importance
+
+The most important features identified for predicting customer churn include `total monthly charge`, `customer service calls`, and `total minutes`, while features like `state` had the least importance.
+
+![alt text](image-4.png)
+
+
+## Implications for Real-World Problem
+
+### Proactive Customer Support
+
+Develop proactive support mechanisms for customers who exceed the call threshold. This could involve:
+
+- Reaching out to these customers to understand their issues.
+- Offering solutions or escalations to resolve their problems effectively.
+
+### Improve Customer Service Quality
+
+Enhance the quality of customer service to ensure issues are resolved promptly and satisfactorily.
+
+- Train customer service representatives to handle calls more efficiently and to identify potential signs of churn.
+
+### Feedback Loop
+
+Create a feedback loop where frequent customer service callers are surveyed to gather insights on their dissatisfaction.
+
+- Use this feedback to improve products, services, and customer support processes.
+
+### Focus on Local Plans
+
+Since a large majority of customers do not have the international plan, efforts should be directed towards enhancing the local plans and ensuring high satisfaction among these customers.
+
+
 
 ## Modeling
 
@@ -84,7 +113,6 @@ An improved model using a Decision Tree Classifier provided the following perfor
 - **F1 Score:** 80.4%
 - **ROC AUC Score:** 90.2%
 
-![Decision Tree Visualization](path/to/decisiontree.png)
 
 These results show a significant improvement in identifying churned customers with balanced precision and recall, leading to a higher F1 score and ROC AUC score.
 
@@ -98,41 +126,9 @@ The logistic regression model achieved an accuracy of 84.9%, indicating decent o
 
 The decision tree classifier significantly improved performance, with an accuracy of 93.7%, precision of 76.1%, and recall of 85.1%. This model effectively balances precision and recall, resulting in a higher F1 score of 80.4 and an ROC AUC score of 90.2, indicating strong discriminative ability.
 
-## Implications for Real-World Problem
 
-### Proactive Customer Support
-
-Develop proactive support mechanisms for customers who exceed the call threshold. This could involve:
-
-- Reaching out to these customers to understand their issues.
-- Offering solutions or escalations to resolve their problems effectively.
-
-### Improve Customer Service Quality
-
-Enhance the quality of customer service to ensure issues are resolved promptly and satisfactorily.
-
-- Train customer service representatives to handle calls more efficiently and to identify potential signs of churn.
-
-### Feedback Loop
-
-Create a feedback loop where frequent customer service callers are surveyed to gather insights on their dissatisfaction.
-
-- Use this feedback to improve products, services, and customer support processes.
-
-### Focus on Local Plans
-
-Since a large majority of customers do not have the international plan, efforts should be directed towards enhancing the local plans and ensuring high satisfaction among these customers.
-
-## Feature Importance
-
-The most important features identified for predicting customer churn include `total monthly charge`, `customer service calls`, and `total minutes`, while features like `state` had the least importance.
-
-![Feature Importance](path/to/featureimportance.png)
 
 ## Conclusion
 
 The decision tree classifier, with its higher accuracy, precision, recall, and F1 score, is the recommended model for predicting customer churn. By focusing on improving customer service, especially for high call volumes and high charges, and collecting feedback, the company can better retain customers.
 
-## References
-
-- Include any references to data sources, libraries, or other resources used in the project.
