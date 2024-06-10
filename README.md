@@ -22,7 +22,7 @@ The dataset includes customer information such as:
 
 A heatmap was created to visualize the correlation between features. High correlations (red) indicate strong relationships between features. For instance, `total monthly charges` and `total day minutes` showed a strong positive correlation.
 
-![alt text](image.png)
+![alt text](images/image.png)
 
 
 ### Boxplots
@@ -31,17 +31,17 @@ Boxplots indicated that higher customer service call counts and total monthly ch
 
 - **Customer Service Calls vs Churn:**
 
-![alt text](image-1.png)
+![alt text](images/image-1.png)
 
 - **Total Monthly Charges vs Churn:**
 
-![alt text](image-2.png)
+![alt text](images/image-2.png)
 
 ### Pie Chart
 
 A pie chart displayed the distribution of customers by international plan, with over 90% not having the plan. This suggests a potential focus area for the company.
 
-![alt text](image-3.png)
+![alt text](images/image-3.png)
 
 ## Feature Engineering
 
@@ -57,7 +57,7 @@ Key features created:
 
 The most important features identified for predicting customer churn include `total monthly charge`, `customer service calls`, and `total minutes`, while features like `state` had the least importance.
 
-![alt text](image-4.png)
+![alt text](images/image-4.png)
 
 
 ## Implications for Real-World Problem
